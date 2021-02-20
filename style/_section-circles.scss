@@ -1,0 +1,86 @@
+.section-circles {
+  text-align: center;
+}
+
+div.circle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.wrap {
+  display: inline-block;
+  max-width: 1000px;
+}
+
+.section-circles .item {
+  display: inline-block;
+  margin-top: 100px;
+  width: 300px;
+  height: auto;
+  text-align: center;
+}
+
+.section-circles h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.section-circles .item:nth-of-type(1) .circle {
+  background-color: #fb3b64;
+}
+
+.section-circles .item:nth-of-type(2) .circle {
+  background-color: #08a6e4;
+}
+
+.section-circles .item:nth-of-type(3) .circle {
+  background-color: #55dfb4;
+}
+
+div.circle img {
+  position: absolute;
+}
+
+.section-circles .item:nth-of-type(1) .circle img {
+  top: -5px;
+  left: 25px;
+  width: 35px;
+}
+
+.section-circles .item:nth-of-type(2) .circle img {
+  top: 12px;
+  left: 20px;
+  width: 45px;
+}
+
+.section-circles .item:nth-of-type(3) .circle img {
+  top: 8px;
+  left: 30px;
+  width: 35px;
+}
+
+.item h3 {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 5.96px;
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  font-weight: 600;
+}
+
+.item p {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: #a5a5a5;
+  padding: 0 10px 20px 20px;
+}
+
+.item:nth-of-type(1) p {
+  padding: 0 10px 20px 5px;
+}

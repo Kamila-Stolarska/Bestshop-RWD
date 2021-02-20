@@ -1,0 +1,65 @@
+.header-placeholder {
+  height: 70px;
+}
+
+/* menu */
+header {
+  position: relative;
+}
+
+nav {
+  font-size: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+  padding: 0 15px;
+  background-color: white;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 0.9;
+  z-index: 100;
+}
+
+nav ul {
+  width: calc(100% - 142px);
+  display: inline-block;
+  text-align: right;
+  list-style: none;
+  font-size: 0;
+  background-color: white;
+}
+
+nav div > a {
+  display: inline-block;
+  vertical-align: -5px;
+  font-size: 32px;
+  color: #08a6e4;
+  width: 142px;
+  height: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+nav ul li a {
+  line-height: 70px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-family: arial;
+  font-size: 11px;
+  letter-spacing: 3.28px;
+  color: #a5a5a5;
+  opacity: 1;
+  font-family: "Open Sans", sans-serif;
+}
+li:hover a {
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid #08a6e4;
+  padding-bottom: 28px;
+}
