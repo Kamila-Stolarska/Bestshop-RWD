@@ -1,0 +1,658 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-placeholder {
+  height: 70px;
+}
+/* menue */
+body {
+  height: 300vh;
+  width: 100vw;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  font-size: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+  padding: 0 15px;
+  background-color: white;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 0.9;
+  z-index: 100;
+}
+
+nav ul {
+  width: calc(100% - 142px);
+  display: inline-block;
+  text-align: right;
+  list-style: none;
+  font-size: 0;
+  background-color: white;
+}
+
+nav div > a {
+  display: inline-block;
+  vertical-align: -5px;
+  font-size: 32px;
+  color: #08a6e4;
+  width: 142px;
+  height: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+nav ul li a {
+  line-height: 70px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-family: arial;
+  font-size: 11px;
+  letter-spacing: 3.28px;
+  color: #a5a5a5;
+  opacity: 1;
+  font-family: "Open Sans", sans-serif;
+}
+li:hover a {
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid #08a6e4;
+  padding-bottom: 28px;
+}
+section.head {
+  position: relative;
+  width: 100vw;
+}
+div.background {
+  /* position: absolute;
+  top: 220px;
+  left: 0; */
+  background-image: url(image/Background.png);
+  width: 100vw;
+  height: 594px;
+  background-position: center;
+}
+div.naglowek {
+  text-align: center;
+}
+
+div.naglowek h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 49px;
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+div.naglowek > p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 30px;
+}
+div.naglowek > button {
+  width: 440px;
+  height: 65px;
+  background-color: #08a6e4;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+}
+
+/* Section first */
+section.first {
+  text-align: center;
+}
+
+div.circle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+.wrap {
+  display: inline-block;
+  max-width: 1000px;
+}
+
+.first .item {
+  display: inline-block;
+  margin-top: 100px;
+  width: 300px;
+  height: auto;
+  text-align: center;
+}
+.first h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+.first .item:nth-of-type(1) .circle {
+  background-color: #fb3b64;
+}
+.first .item:nth-of-type(2) .circle {
+  background-color: #08a6e4;
+}
+.first .item:nth-of-type(3) .circle {
+  background-color: #55dfb4;
+}
+div.circle img {
+  position: absolute;
+}
+.first .item:nth-of-type(1) .circle img {
+  top: -5px;
+  left: 25px;
+  width: 35px;
+}
+.first .item:nth-of-type(2) .circle img {
+  top: 12px;
+  left: 20px;
+  width: 45px;
+}
+.first .item:nth-of-type(3) .circle img {
+  top: 8px;
+  left: 30px;
+  width: 35px;
+}
+.item h3 {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 5.96px;
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  font-weight: 600;
+}
+.item p {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: #a5a5a5;
+  padding: 0 10px 20px 20px;
+}
+.item:nth-of-type(1) p {
+  padding: 0 10px 20px 5px;
+}
+/* Section .adds */
+
+.adds {
+  width: 100vw;
+  height: auto;
+  background-color: #f7f7f7;
+}
+
+.adds .wrapper {
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #fff;
+  font-size: 0;
+}
+
+.adds .wrapper.last {
+  background-color: #f7f7f7;
+}
+
+.wrapper:nth-of-type(1) > div:nth-of-type(2)::after {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: #fb3b64;
+  border-radius: 34px;
+  transform: rotate(45deg);
+}
+.wrapper:nth-of-type(1) > div:nth-of-type(2) img {
+  position: absolute;
+  width: auto;
+  height: 150px;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.wrapper:nth-of-type(1) > div:nth-of-type(1) {
+  padding-left: 30px;
+}
+.adds .wrapper > div {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  position: relative;
+}
+.adds .wrapper h2 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-align: left;
+  margin: 0 auto 30px auto;
+}
+.adds .wrapper p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+}
+
+.item-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+.wrapper:nth-of-type(1) .item-text,
+.wrapper:nth-of-type(3) .item-text {
+  left: 30px;
+}
+
+.wrapper:nth-of-type(2) .item-text {
+  left: auto;
+  right: 30px;
+}
+
+.adds .wrapper p::after {
+  position: absolute;
+  height: 2px;
+  width: 290px;
+  display: inline-block;
+  content: "";
+  left: 0;
+  bottom: -30px;
+}
+
+.adds .wrapper:nth-of-type(1) p::after {
+  background-color: #fb3b64;
+}
+.adds .wrapper:nth-of-type(2) p::after {
+  background-color: #07ace6;
+}
+.adds .wrapper:nth-of-type(3) p::after {
+  background-color: #55dfb4;
+}
+
+.adds div.wrapper {
+  margin-bottom: 50px;
+}
+.adds .container-fluid {
+  padding: 100px 0 50px 0;
+}
+.wrapper:nth-of-type(2) div:nth-of-type(1) img {
+  position: absolute;
+  height: 250px;
+  width: auto;
+  z-index: 2;
+  top: 30px;
+  left: 10px;
+}
+.wrapper:nth-of-type(2) > div:nth-of-type(1)::after {
+  position: absolute;
+  display: inline-block;
+  background-color: #07ace6;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  content: "";
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.adds .wrapper.last > div:nth-of-type(1) {
+  background-color: #fff;
+  width: 60%;
+}
+
+.adds .wrapper.last > div:nth-of-type(1) .item-text {
+  padding-right: 30px;
+}
+
+.adds .wrapper.last > div:nth-of-type(2) {
+  background-color: #55dfb4;
+  margin-left: 5%;
+  width: 35%;
+}
+
+.adds .wrapper.last > div:nth-of-type(2) img {
+  position: absolute;
+  width: auto;
+  height: 150px;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+/* section pricing */
+
+.pricing {
+  width: 100vw;
+  height: auto;
+  background-color: #fff;
+  padding-bottom: 25px;
+}
+.pricing h2 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  margin: 100px 0 60px 0;
+  padding: 20px;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-direction: space-between;
+  width: 80%;
+  height: auto;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+}
+.box h2 {
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+}
+.box h3 {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.one h3 {
+  color: #fb3b64;
+}
+.two h3 {
+  color: #07ace6;
+}
+.three h3 {
+  color: #55dfb4;
+}
+h4 {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 0;
+}
+.one,
+.two,
+.three {
+  width: 300px;
+  border-radius: 18px;
+  position: relative;
+  padding-bottom: 60px;
+}
+.one {
+  border: 1px solid #fb3b64;
+}
+.two {
+  width: 350px;
+  border: 1px solid #07ace6;
+  box-shadow: 5px 10px 27px #07ace629;
+}
+.three {
+  border: 1px solid #55dfb4;
+}
+.box div button {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 150px;
+  height: 50px;
+  border-radius: 23px;
+  color: white;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+.box .one button {
+  background-color: #eb476e;
+}
+.box .two button {
+  background-color: #07ace6;
+}
+.box .three button {
+  background-color: #55dfb4;
+}
+.box .one div {
+  margin-top: calc(20px + 37px);
+}
+.box .two div {
+  margin-top: 40px;
+}
+.box .three div {
+  margin-top: 20px;
+}
+.box div p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 15px;
+}
+
+.box div.two p {
+  padding-bottom: 19px;
+}
+.box div i {
+  padding: 5px;
+  color: #55dfb4;
+}
+.box div .fas.fa-times {
+  color: #eb476e;
+}
+/*section form*/
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 50px;
+  max-width: 80%;
+  margin-bottom: 50px;
+}
+.form > div {
+  width: 50%;
+}
+.form > div:first-child h2 {
+  font-size: 49px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+.form > div:first-child p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 0;
+}
+.form > div:first-child div p {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #a5a5a5;
+}
+.form > div:first-child i {
+  color: #08a6e4;
+  padding: 5px;
+}
+.form > div:last-child label,
+.form > div:last-child input {
+  display: block;
+  width: 100%;
+}
+.form > div:last-child label {
+  margin-bottom: 20px;
+  color: #08a6e4;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+}
+.form > div:last-child .input-wrapper:nth-of-type(2) label {
+  margin-top: 20px;
+}
+.form > div:last-child form .input-wrapper input {
+  border: none;
+  border-bottom: 1px solid #707070;
+}
+
+.form > div:last-child form > .input-wrapper input:focus {
+  outline: none;
+}
+.form > div:last-child form > .input-wrapper input:focus + .animated-underline {
+  display: block;
+  width: 100%;
+}
+.animated-underline {
+  display: none;
+  width: 0%;
+  height: 1px;
+  background-color: #08a6e4;
+  animation-name: underline;
+  animation-duration: 0.5s;
+}
+
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* .form > div:last-child form > input:focus::after {
+  content: "dupa";
+  width: 100%;
+  height: 3px;
+  background-color: #08a6e4;
+} */
+
+.form > div:last-child form > div:nth-of-type(3) {
+  margin-top: 20px;
+  position: relative;
+  padding-left: 30px;
+}
+
+/* Custom Checkbox Start */
+.form > div:last-child div:not(.input-wrapper) input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+  cursor: pointer;
+}
+.form > div:last-child div .custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #95989a;
+  border-radius: 4px;
+  opacity: 0.8;
+  z-index: -1;
+}
+.form > div:last-child div .custom-checkbox:after {
+  content: "";
+  background-image: url(./image/Checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 11px;
+  height: 12px;
+  display: none;
+}
+.form > div:last-child div input:checked + .custom-checkbox:after {
+  display: block;
+}
+/* Custom Checkbox End */
+
+.form > div:last-child div p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #707070;
+}
+.form > div:last-child div:last-child {
+  text-align: right;
+  margin-top: 30px;
+}
+.form > div:last-child div:last-child button {
+  width: 226px;
+  height: 56px;
+  border-radius: 35px;
+  background-color: #08a6e4;
+  border: none;
+  color: white;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+/* footer*/
+footer {
+  width: 100%;
+  background-color: #f7f7f7;
+  box-shadow: 0px -5px 40px #00000029;
+}
+
+footer > div {
+  display: flex;
+  height: 89px;
+  justify-content: space-between;
+}
+footer > div > div {
+  width: 50%;
+}
+footer > div div:first-child p:nth-of-type(1) {
+  color: #08a6e4;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+footer > div div:first-child p:nth-of-type(2) {
+  color: #a5a5a5;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+}
+footer > div div:last-child {
+  text-align: right;
+  line-height: calc(89px + 12px);
+}
+footer > div div:last-child img {
+  padding: 0 10px;
+}
+footer > div div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
