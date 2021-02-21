@@ -11,6 +11,8 @@ div.background {
   width: 100vw;
   height: 594px;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 div.top-wrapper {
@@ -40,4 +42,31 @@ div.top-wrapper > button {
   border-radius: 40px;
   color: white;
   font-size: 16px;
+}
+
+//LG
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+//MD
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+//XS and SM
+@media (max-width: 767px) {
+}
+
+//SM
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+//XS
+@media (max-width: 576px) {
+  div {
+    &.top-wrapper {
+      & > button {
+        width: 85%;
+      }
+    }
+  }
 }

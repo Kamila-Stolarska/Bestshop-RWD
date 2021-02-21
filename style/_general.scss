@@ -6,6 +6,12 @@
   text-decoration: none;
 }
 
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;

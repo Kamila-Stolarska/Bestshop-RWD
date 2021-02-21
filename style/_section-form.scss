@@ -117,7 +117,7 @@
 
 .form > div:last-child div .custom-checkbox:after {
   content: "";
-  background-image: url(./image/Checkmark.svg);
+  background-image: url(../image/Checkmark.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -156,4 +156,31 @@
   font-size: 13px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+}
+
+//LG
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+//MD
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+//XS and SM
+@media (max-width: 767px) {
+  .form {
+    flex-direction: column;
+
+    & > div {
+      width: 100%;
+    }
+  }
+}
+
+//SM
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+//XS
+@media (max-width: 576px) {
 }

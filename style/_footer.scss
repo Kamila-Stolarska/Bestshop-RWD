@@ -45,3 +45,23 @@ footer > div div:first-child {
   align-items: flex-start;
   justify-content: center;
 }
+
+//LG
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+//MD
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+//XS and SM
+@media (max-width: 767px) {
+}
+
+//SM
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+//XS
+@media (max-width: 576px) {
+}

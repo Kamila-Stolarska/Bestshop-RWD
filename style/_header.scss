@@ -29,6 +29,24 @@ nav ul {
   font-size: 0;
   background-color: white;
 }
+div.hamburger-icon {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  height: 100%;
+  padding-left: 30px;
+
+  i.fas.fa-bars {
+    color: #08a6e4;
+    font-size: 30px;
+    line-height: 70px;
+    display: block;
+  }
+}
+.active {
+  display: block;
+}
 
 nav div > a {
   display: inline-block;
@@ -36,7 +54,7 @@ nav div > a {
   font-size: 32px;
   color: #08a6e4;
   width: 142px;
-  height: 30px;
+  height: 70px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -62,4 +80,57 @@ li:hover a {
   font-weight: bold;
   border-bottom: 2px solid #08a6e4;
   padding-bottom: 28px;
+}
+
+//LG
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+//MD
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+//XS and SM
+@media (max-width: 767px) {
+  nav {
+    opacity: 1;
+    padding: 0;
+
+    .container {
+      max-width: none;
+      line-height: 70px;
+    }
+
+    ul {
+      display: none;
+      text-align: left;
+      width: 100%;
+
+      li {
+        display: block;
+        margin: 0;
+
+        a {
+          text-transform: uppercase;
+          text-align: left;
+        }
+      }
+    }
+
+    div.hamburger-icon {
+      display: inline-block;
+
+      i.fas.fa-bars {
+        display: block;
+      }
+    }
+  }
+}
+
+//SM
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+//XS
+@media (max-width: 576px) {
 }
