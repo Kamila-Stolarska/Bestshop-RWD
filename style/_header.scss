@@ -36,6 +36,7 @@ div.hamburger-icon {
   transform: translateY(-50%);
   height: 100%;
   padding-left: 30px;
+  display: none;
 
   i.fas.fa-bars {
     color: #08a6e4;
@@ -99,6 +100,7 @@ li:hover a {
     .container {
       max-width: none;
       line-height: 70px;
+      padding: 0 15px;
     }
 
     ul {
@@ -109,6 +111,9 @@ li:hover a {
       li {
         display: block;
         margin: 0;
+        margin: 0 -15px;
+        padding: 0 15px;
+        background-color: white;
 
         a {
           text-transform: uppercase;
