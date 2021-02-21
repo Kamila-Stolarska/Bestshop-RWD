@@ -119,6 +119,14 @@ h4 {
 
 //MD
 @media (min-width: 768px) and (max-width: 991px) {
+  .box {
+    flex-direction: column;
+
+    .one,
+    .two {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 //XS and SM
@@ -139,4 +147,14 @@ h4 {
 
 //XS
 @media (max-width: 576px) {
+  .box {
+    .one,
+    .three {
+      width: 90%;
+    }
+
+    .two {
+      width: 95%;
+    }
+  }
 }

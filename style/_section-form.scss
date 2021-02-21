@@ -183,4 +183,7 @@
 
 //XS
 @media (max-width: 576px) {
+  .form {
+    max-width: none;
+  }
 }
