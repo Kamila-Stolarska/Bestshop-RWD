@@ -48,7 +48,7 @@ h4 {
 .one,
 .two,
 .three {
-  width: 300px;
+  width: 30%;
   border-radius: 18px;
   position: relative;
   padding-bottom: 60px;
@@ -57,7 +57,7 @@ h4 {
   border: 1px solid #fb3b64;
 }
 .two {
-  width: 350px;
+  width: 35%;
   border: 1px solid #07ace6;
   box-shadow: 5px 10px 27px #07ace629;
 }
@@ -126,6 +126,15 @@ h4 {
     .two {
       margin-bottom: 50px;
     }
+
+    .one,
+    .three {
+      width: 60%;
+    }
+
+    .two {
+      width: 70%;
+    }
   }
 }
 
@@ -143,6 +152,17 @@ h4 {
 
 //SM
 @media (min-width: 576px) and (max-width: 767px) {
+  .box {
+    .one,
+    .two,
+    .three {
+      width: 60%;
+    }
+
+    .two {
+      width: 70%;
+    }
+  }
 }
 
 //XS

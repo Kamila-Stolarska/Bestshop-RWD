@@ -1,0 +1,105 @@
+.pop-up {
+  background-color: #f7f7f7;
+  height: auto;
+
+  .pop-up-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    h2 {
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+      font-size: 35px;
+      margin: 10px 0 20px 0;
+      padding: 30px;
+    }
+    .forms {
+      display: inline-block;
+      flex-basis: 50%;
+      height: 300px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 50%;
+        height: 400px;
+
+        input {
+          display: block;
+          width: 35vw;
+          height: 5.5vh;
+          margin: 10px 0;
+          padding: 0 15px;
+          font-family: "Raleway", sans-serif;
+          border: 1px solid #08a6e4;
+          border-radius: 5px;
+          box-shadow: 2px #08a6e4;
+        }
+
+        input:first-of-type {
+          margin-top: 0;
+        }
+
+        .checkbox {
+          position: relative;
+          width: 35vw;
+          margin-top: 10px;
+
+          input {
+            width: 20px;
+            height: 20px;
+          }
+          p {
+            position: absolute;
+            font-family: "Raleway", sans-serif;
+            font-size: 12px;
+          }
+          p:nth-of-type(1) {
+            top: 2px;
+            left: 50px;
+          }
+          p:nth-of-type(2) {
+            top: 34px;
+            left: 50px;
+          }
+        }
+      }
+    }
+    .calculator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 50%;
+      height: 400px;
+      div {
+        &:not(:last-of-type) {
+          width: 35vw;
+          height: 5.5vh;
+          background-color: #55dfb4;
+          margin: 10px 0;
+          border-radius: 5px;
+        }
+        &:first-of-type {
+          margin-top: 0;
+        }
+        &:last-of-type {
+          width: 35vw;
+          text-align: right;
+        }
+      }
+      button {
+        margin-top: 10px;
+        width: 17vw;
+        height: 6vh;
+        border-radius: 10px;
+        background-color: #08a6e4;
+        border: none;
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+      }
+    }
+  }
+}
