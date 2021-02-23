@@ -1,6 +1,7 @@
 .pop-up {
   background-color: #f7f7f7;
   height: auto;
+  font-family: "Raleway", sans-serif;
 
   .pop-up-wrapper {
     display: flex;
@@ -53,7 +54,6 @@
           }
           p {
             position: absolute;
-            font-family: "Raleway", sans-serif;
             font-size: 12px;
           }
           p:nth-of-type(1) {
@@ -73,7 +73,16 @@
       align-items: center;
       flex-basis: 50%;
       height: 400px;
+
       div {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        span {
+          padding: 0 10px;
+          align-self: center;
+        }
+
         &:not(:last-of-type) {
           width: 35vw;
           height: 5.5vh;
@@ -81,8 +90,11 @@
           margin: 10px 0;
           border-radius: 5px;
         }
+
         &:first-of-type {
+          display: flex;
           margin-top: 0;
+          justify-content: space-between;
         }
         &:last-of-type {
           width: 35vw;
@@ -102,4 +114,73 @@
       }
     }
   }
+}
+// <div class="pop-up container">
+//         <h2>Calculate how much you will pay</h2>
+//         <div class="pop-up-wrapper">
+//           <div class="forms">
+//             <form action="form-popup">
+//               <input type="text" placeholder="Products quantity" />
+//               <input type="text" placeholder="Estimated orders in month" />
+//               <input type="text" placeholder="Choose package" />
+//               <div class="checkbox">
+//                 <input type="checkbox" name="accounting" />
+//                 <p>Accounting</p>
+//                 <input type="checkbox" name="Rental" />
+//                 <p>Rental of a payment terminal</p>
+//               </div>
+//             </form>
+//           </div>
+// <div class="calculator">
+//             <div></div>
+//             <div></div>
+//             <div></div>
+//             <div></div>
+//             <div></div>
+//             <div><button>Total</button></div>
+//           </div>
+//         </div>
+//       </div>
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 350px) and (max-width: 991px) {
+  .pop-up {
+    .pop-up-wrapper {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .forms {
+        form {
+          height: auto;
+          input {
+            width: 70vw;
+          }
+        }
+        .checkbox {
+          margin-bottom: 50px;
+        }
+      }
+      .calculator {
+        height: auto;
+
+        div {
+          &:nth-of-type(n + 1) {
+            width: 70vw;
+          }
+        }
+        &:last-of-type {
+          margin-bottom: 50px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 576px) {
 }
