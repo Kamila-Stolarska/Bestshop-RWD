@@ -37,6 +37,12 @@
           border: 1px solid #08a6e4;
           border-radius: 5px;
           box-shadow: 2px #08a6e4;
+
+          &::placeholder {
+            font-family: "Raleway", sans-serif;
+            color: #a5a5a5;
+            font-size: 13px;
+          }
         }
 
         input:first-of-type {
@@ -97,6 +103,7 @@
           justify-content: space-between;
         }
         &:last-of-type {
+          display: block;
           width: 35vw;
           text-align: right;
         }
@@ -115,32 +122,57 @@
     }
   }
 }
-// <div class="pop-up container">
-//         <h2>Calculate how much you will pay</h2>
-//         <div class="pop-up-wrapper">
-//           <div class="forms">
-//             <form action="form-popup">
-//               <input type="text" placeholder="Products quantity" />
-//               <input type="text" placeholder="Estimated orders in month" />
-//               <input type="text" placeholder="Choose package" />
-//               <div class="checkbox">
-//                 <input type="checkbox" name="accounting" />
-//                 <p>Accounting</p>
-//                 <input type="checkbox" name="Rental" />
-//                 <p>Rental of a payment terminal</p>
-//               </div>
-//             </form>
-//           </div>
-// <div class="calculator">
-//             <div></div>
-//             <div></div>
-//             <div></div>
-//             <div></div>
-//             <div></div>
-//             <div><button>Total</button></div>
-//           </div>
-//         </div>
-//       </div>
+
+//Custom select
+.custom-select {
+  width: 35vw;
+  height: 5.5vh;
+  margin: 10px 0;
+  padding: 0 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  line-height: 5.5vh;
+  border: 1px solid #08a6e4;
+  border-radius: 5px;
+  box-shadow: 2px #08a6e4;
+  background-color: white;
+  position: relative;
+  color: #a5a5a5;
+
+  .selected-option {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .dropdown {
+    display: none;
+    color: #000;
+    line-height: normal;
+    position: absolute;
+    width: 100%;
+    top: 5.5vh;
+    left: 0;
+    background-color: white;
+    border: 1px solid #eb476e;
+    border-radius: 5px;
+    box-shadow: 2px #eb476e;
+    z-index: 100;
+
+    &.open {
+      display: block;
+    }
+
+    div {
+      padding: 7px 10px;
+
+      &:hover {
+        color: #eb476e;
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
 }

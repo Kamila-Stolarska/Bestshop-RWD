@@ -168,7 +168,16 @@
             <form action="form-popup">
               <input type="text" placeholder="Products quantity" />
               <input type="text" placeholder="Estimated orders in month" />
-              <input type="text" placeholder="Choose package" />
+              <div class="custom-select">
+                <div class="selected-option" data-value="">
+                  Choose your package
+                </div>
+                <div class="dropdown">
+                  <div data-value="basic">Basic</div>
+                  <div data-value="professional">Professional</div>
+                  <div data-value="premium">Premium</div>
+                </div>
+              </div>
               <div class="checkbox">
                 <input type="checkbox" name="accounting" />
                 <p>Accounting</p>
