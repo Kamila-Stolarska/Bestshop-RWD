@@ -4,8 +4,8 @@
   align-items: flex-start;
   justify-content: center;
   margin-top: 50px;
-
   margin-bottom: 50px;
+  font-family: $font-main;
 }
 
 .form > div {
@@ -20,14 +20,12 @@
 
 .form > div:first-child p {
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
   padding: 15px 0;
 }
 
 .form > div:first-child div p {
   display: inline-block;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
   color: #a5a5a5;
 }
 
@@ -46,7 +44,6 @@
   margin-bottom: 20px;
   color: #08a6e4;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
   font-size: 11px;
 }
 
@@ -135,7 +132,6 @@
 /* Custom Checkbox End */
 
 .form > div:last-child div p {
-  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   color: #707070;
 }
@@ -154,7 +150,6 @@
   color: white;
   text-transform: capitalize;
   font-size: 13px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 

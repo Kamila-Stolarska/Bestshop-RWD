@@ -1,7 +1,7 @@
-const bars = document.querySelector(".hamburger-icon");
+const barsIcon = document.querySelector(".hamburger-icon");
 const navList = document.querySelector("nav ul");
 
-bars.addEventListener("click", function () {
+barsIcon.addEventListener("click", function () {
   navList.classList.toggle("active");
 });
 
