@@ -133,7 +133,7 @@
             <p><i class="fas fa-times"></i>Two years license</p>
             <p><i class="fas fa-times"></i>Full support</p>
           </div>
-          <button>Begin</button>
+          <button data-value="0" class="button-pricing">Begin</button>
         </div>
         <div class="two">
           <h2>Professional</h2>
@@ -146,7 +146,7 @@
             <p><i class="far fa-check-square"></i>One year license</p>
             <p><i class="fas fa-times"></i>Full support</p>
           </div>
-          <button>Begin</button>
+          <button data-value="25" class="button-pricing">Begin</button>
         </div>
         <div class="three">
           <h2>Premium</h2>
@@ -159,77 +159,78 @@
             <p><i class="far fa-check-square"></i>Two years license</p>
             <p><i class="far fa-check-square"></i>Full support</p>
           </div>
-          <button>Begin</button>
-        </div>
-      </div>
-      <div class="pop-up container">
-        <h2>Calculate how much you will pay</h2>
-        <div class="pop-up-wrapper">
-          <div class="forms">
-            <form action="form-popup">
-              <input
-                type="number"
-                placeholder="Products quantity"
-                id="quantity"
-                value=""
-              />
-              <input
-                type="number"
-                placeholder="Estimated orders in month"
-                id="orders"
-                value=""
-              />
-              <div class="custom-select">
-                <div class="selected-option" data-value="">
-                  Choose your package
-                </div>
-                <div class="dropdown">
-                  <div data-value="0">Basic</div>
-                  <div data-value="25">Professional</div>
-                  <div data-value="60">Premium</div>
-                </div>
-              </div>
-              <div class="checkbox">
-                <input
-                  type="checkbox"
-                  name="accounting"
-                  id="accounting"
-                  value="35"
-                />
-                <p>Accounting</p>
-                <input type="checkbox" name="Rental" id="rental" value="5" />
-                <p>Rental of a payment terminal</p>
-              </div>
-            </form>
-          </div>
-          <div class="calculator">
-            <div class="hidden">
-              <span>Products</span><span class="calc"></span
-              ><span data-value="" class="line-total"></span>
-            </div>
-            <div class="hidden">
-              <span>Orders</span><span class="calc"></span
-              ><span data-value="" class="line-total"></span>
-            </div>
-            <div class="hidden">
-              <span>Package</span><span class="calc"></span
-              ><span data-value="" class="line-total"></span>
-            </div>
-            <div class="hidden">
-              <span>Accounting</span
-              ><span data-value="" class="line-total"></span>
-            </div>
-            <div class="hidden">
-              <span>Terminal</span
-              ><span data-value="" class="line-total"></span>
-            </div>
-            <div>
-              <button>Total <span id="totals">0</span></button>
-            </div>
-          </div>
+          <button data-value="60" class="button-pricing">Begin</button>
         </div>
       </div>
     </section>
+    <div class="pop-up container">
+      <h2 class="pop-up-h2">Calculate how much you will pay</h2>
+      <div class="close"><i class="far fa-times-circle"></i></div>
+      <div class="pop-up-wrapper">
+        <div class="forms">
+          <form action="form-popup">
+            <input
+              type="number"
+              placeholder="Products quantity"
+              id="quantity"
+              value=""
+            />
+            <input
+              type="number"
+              placeholder="Estimated orders in month"
+              id="orders"
+              value=""
+            />
+            <div class="custom-select">
+              <div class="selected-option" data-value="">
+                Choose your package
+              </div>
+              <div class="dropdown">
+                <div data-value="0">Basic</div>
+                <div data-value="25">Professional</div>
+                <div data-value="60">Premium</div>
+              </div>
+            </div>
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                name="accounting"
+                id="accounting"
+                value="35"
+              />
+              <p>Accounting</p>
+              <input type="checkbox" name="Rental" id="rental" value="5" />
+              <p>Rental of a payment terminal</p>
+            </div>
+          </form>
+        </div>
+        <div class="calculator">
+          <div class="hidden">
+            <span>Products</span><span class="calc"></span
+            ><span data-value="" class="line-total"></span>
+          </div>
+          <div class="hidden">
+            <span>Orders</span><span class="calc"></span
+            ><span data-value="" class="line-total"></span>
+          </div>
+          <div class="hidden">
+            <span>Package</span><span class="calc"></span
+            ><span data-value="" class="line-total"></span>
+          </div>
+          <div class="hidden">
+            <span>Accounting</span
+            ><span data-value="" class="line-total"></span>
+          </div>
+          <div class="hidden">
+            <span>Terminal</span><span data-value="" class="line-total"></span>
+          </div>
+          <div class="totals-wrapper">
+            <button>Total <span id="totals">0</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="form container">
       <div>
         <h2>Any questions?</h2>

@@ -15,7 +15,8 @@ const dropdownOptions = document.querySelectorAll(".dropdown div");
 const productsQty = document.getElementById("quantity");
 const monthlyOrders = document.getElementById("orders");
 const accounting = document.getElementById("accounting");
-const termianlRental = document.getElementById("rental");
+const terminalRental = document.getElementById("rental");
+const resultButton = document.getElementById("totals");
 const lineTotalNodeList = document.querySelectorAll(".calculator div");
 
 const productPrice = 0.5;
@@ -47,6 +48,7 @@ for (let i = 0; i < dropdownOptions.length; i++) {
 
 productsQty.addEventListener("input", (event) => {
   let lineTotal = lineTotalNodeList[0].querySelector(".line-total");
+
   if (event.target.value && event.target.value > 0) {
     let calculations = lineTotalNodeList[0].querySelector(".calc");
     let res = event.target.value * productPrice;
@@ -97,7 +99,7 @@ accounting.addEventListener("input", (event) => {
   updateTotal();
 });
 
-termianlRental.addEventListener("input", (event) => {
+terminalRental.addEventListener("input", (event) => {
   let lineTotal = lineTotalNodeList[4].querySelector(".line-total");
   if (event.target.checked) {
     let res = event.target.value;
@@ -114,7 +116,6 @@ termianlRental.addEventListener("input", (event) => {
 
 function updateTotal() {
   let lineTotalNodeList = document.querySelectorAll(".line-total");
-  const resultButton = document.getElementById("totals");
   let res = 0;
 
   for (let i = 0; i < lineTotalNodeList.length; i++) {
@@ -123,3 +124,42 @@ function updateTotal() {
 
   resultButton.textContent = "$" + res;
 }
+
+const buttonForPricing = document.querySelectorAll(".button-pricing");
+const popupCalculator = document.querySelector(".pop-up");
+const close = document.querySelector(".close");
+
+buttonForPricing.forEach(function (buttonForPrice) {
+  buttonForPrice.addEventListener("click", function () {
+    popupCalculator.classList.add("active");
+
+    let targetOption = document.querySelector(
+      `.dropdown [data-value='${this.dataset.value}']`
+    );
+    targetOption.click();
+    targetOption.parentElement.classList.remove("open");
+  });
+});
+
+close.addEventListener("click", () => {
+  popupCalculator.classList.remove("active");
+  productsQty.value = "";
+  monthlyOrders.value = "";
+
+  if (accounting.checked) {
+    accounting.click();
+  }
+
+  if (terminalRental.checked) {
+    terminalRental.click();
+  }
+
+  lineTotalNodeList.forEach(function (lineTotal) {
+    if (!lineTotal.classList.contains("totals-wrapper")) {
+      lineTotal.querySelector(".line-total").dataset.value = "";
+      lineTotal.classList.add("hidden");
+    }
+  });
+
+  resultButton.textContent = "0";
+});

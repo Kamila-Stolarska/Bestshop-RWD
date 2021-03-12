@@ -1,20 +1,36 @@
 .pop-up {
+  display: none;
+  margin-top: 100px;
   background-color: #f7f7f7;
   height: auto;
   font-family: $font-main;
   max-width: 1140px;
-
+  position: relative;
+  .pop-up-h2 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    margin: 20px 0 20px 0;
+    padding: 50px;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    i {
+      font-size: 35px;
+      color: #08a6e4;
+      line-height: 60px;
+    }
+  }
   .pop-up-wrapper {
     display: flex;
     max-width: 1140px;
+    text-align: center;
 
-    h2 {
-      text-align: center;
-      font-family: "Raleway", sans-serif;
-      font-size: 35px;
-      margin: 10px 0 20px 0;
-      padding: 30px;
-    }
     .forms {
       width: 50%;
       height: 300px;
@@ -24,7 +40,7 @@
         flex-direction: column;
         flex-basis: 50%;
         height: 400px;
-        padding: 0 15px;
+        padding: 0 25px;
 
         input {
           display: block;
@@ -120,7 +136,9 @@
     }
   }
 }
-
+.active {
+  display: block;
+}
 //Custom select
 .custom-select {
   width: 90%;
@@ -135,6 +153,7 @@
   background-color: white;
   position: relative;
   color: #a5a5a5;
+  text-align: left;
 
   .selected-option {
     &:hover {
