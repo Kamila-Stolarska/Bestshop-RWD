@@ -25,6 +25,9 @@
       color: #08a6e4;
       line-height: 60px;
     }
+    &:hover {
+      cursor: pointer;
+    }
   }
   .pop-up-wrapper {
     display: flex;

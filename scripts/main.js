@@ -138,6 +138,10 @@ buttonForPricing.forEach(function (buttonForPrice) {
     );
     targetOption.click();
     targetOption.parentElement.classList.remove("open");
+    popupCalculator.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   });
 });
 
@@ -149,17 +153,41 @@ close.addEventListener("click", () => {
   if (accounting.checked) {
     accounting.click();
   }
-
   if (terminalRental.checked) {
     terminalRental.click();
   }
-
   lineTotalNodeList.forEach(function (lineTotal) {
     if (!lineTotal.classList.contains("totals-wrapper")) {
       lineTotal.querySelector(".line-total").dataset.value = "";
       lineTotal.classList.add("hidden");
     }
   });
-
   resultButton.textContent = "0";
+
+  document.querySelector("section.pricing").scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+});
+
+// navigation scroll
+const links = document.querySelectorAll("header [data-link]");
+
+links.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetSectionOffset =
+      document.querySelector(`section[data-link='${this.dataset.link}']`)
+        .offsetTop - 70;
+
+    window.scroll({
+      top: targetSectionOffset,
+      behavior: "smooth",
+    });
+
+    let mobileMenuActive = document.querySelector("header ul.active");
+    if (mobileMenuActive) {
+      mobileMenuActive.classList.remove("active");
+    }
+  });
 });
